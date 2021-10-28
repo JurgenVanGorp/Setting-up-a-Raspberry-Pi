@@ -36,7 +36,7 @@ Configure the following settings (at will):
   * Enable I2C
 * In *Localization Options*
   * Change the time zone to your local time zone
-  * Change the Keyboard to match your keyboards
+  * Change the Keyboard to match your keyboard layout
 * In "Advanced Options*
   * Expand File System to use the full SD Card
 * You may want to Update the tool to the latest version
@@ -68,17 +68,16 @@ Edit the configuration for the network.
 sudo nano /etc/dhcpcd.conf
 ```
 
-Move down in the file until you can find the
-* Change the Pi default password
-section. Configure a fixed IP address by adding (or updating) the following lines. Change the numbers to your own network configuration, of course.
+Move down in the file until you can find the **#interface eth0** section. Configure a fixed IP address by adding (or updating) the following lines. Change the numbers to your own network configuration, of course.
 
 ```python
-# THIS IS ONLY AN EXAMPLE
+# THIS IS ONLY AN EXAMPLE for the fixed NIC.
 interface eth0
 static ip_address=192.168.1.200/24
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.1 8.8.8.8
 
+# THIS IS ONLY AN EXAMPLE if you have e.g. also a wireless adapter installed.
 interface wlan0
 static ip_address=192.168.1.201/24
 #static routers=192.168.1.1
@@ -106,4 +105,10 @@ net.ipv6.conf.eth0.disable_ipv6=1
 
 type Ctrl-S and Ctrl-X to save and exit.
 
---- This completes step 1 of the Home Assistant installation.
+This completes step 1 of the installation. You may want to test the new configuration with a final reboot.
+
+```
+sudo reboot
+```
+
+--- End of File
