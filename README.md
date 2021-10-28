@@ -111,4 +111,5 @@ This completes step 1 of the installation. You may want to test the new configur
 sudo reboot
 ```
 
---- End of File
+Next topic: [Step 2: Upgrading Python on the Raspberry Pi.](https://github.com/JurgenVanGorp/Step2-Upgrading-Python-on-a-Raspberry-Pi)
+
