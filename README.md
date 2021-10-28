@@ -18,7 +18,7 @@ Start with updating the RPi to the latest patch level:
 ```
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt --autoremove -y
+sudo apt autoremove -y
 ```
 
 Then start the RPi configuration screen.
