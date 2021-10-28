@@ -94,7 +94,7 @@ Edit the sysctl.
 sudo nano /etc/sysctl.conf
 ```
 
-Add the following lines.
+Add the following lines at the end of the file.
 
 ```python
 net.ipv6.conf.all.disable_ipv6=1
