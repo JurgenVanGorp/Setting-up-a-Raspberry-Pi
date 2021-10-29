@@ -37,6 +37,7 @@ Configure the following settings (at will):
 * In *Localization Options*
   * Change the time zone to your local time zone
   * Change the Keyboard to match your keyboard layout
+  * WLAN country settings
 * In "Advanced Options*
   * Expand File System to use the full SD Card
 * You may want to Update the tool to the latest version
@@ -88,7 +89,7 @@ type Ctrl-S and Ctrl-X to save and exit.
 
 ### You can disable IPv6 if you don't want to use it
 
-Edit the sysctl.
+Edit sysctl.
 
 ```
 sudo nano /etc/sysctl.conf
@@ -104,6 +105,18 @@ net.ipv6.conf.eth0.disable_ipv6=1
 ```
 
 type Ctrl-S and Ctrl-X to save and exit.
+
+Edit rc.local.
+
+```
+sudo nano /etc/rc.local
+```
+
+At the end of the file - but JUST before the "exit 0" - add the following line.
+
+```javascript
+service procps reload
+```
 
 This completes step 1 of the installation. You may want to test the new configuration with a final reboot.
 
