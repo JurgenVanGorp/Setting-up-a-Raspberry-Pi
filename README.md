@@ -1,4 +1,4 @@
-Guide creation date: 28-Oct-2021 
+Guide creation date: 30-Oct-2021 
 # Step 1: Setting up a Raspberry Pi
 This is a simple explanation on how you can set up a Raspberry Pi.
 
