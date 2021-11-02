@@ -124,5 +124,5 @@ This completes step 1 of the installation. You may want to test the new configur
 sudo reboot
 ```
 
-Next topic: [Step 2: Upgrading Python on the Raspberry Pi.](https://github.com/JurgenVanGorp/Step2-Upgrading-Python-on-a-Raspberry-Pi)
+Next topic: [Step 2: Installing Home Assistant Native on a Raspberry Pi.](https://github.com/JurgenVanGorp/Home-Assistant-on-Raspberry-Pi-Native)
 
